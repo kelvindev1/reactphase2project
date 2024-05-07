@@ -3,6 +3,7 @@ import Joblisting from "./Joblisting";
 
 function Joblistings() {
   const [jobs, setJobs] = useState([]);
+  const recentJobs = jobs.slice(0, 3);
   useEffect(() => {
     fetch("http://localhost:3000/jobs")
       .then((res) => res.json())
@@ -14,7 +15,7 @@ function Joblistings() {
   return (
     <div className="jobs-container">
       <ul className="jobs-items">
-        {jobs.map((job) => (
+        {recentJobs.map((job) => (
           <Joblisting key={job.id} job={job} />
         ))}
       </ul>
