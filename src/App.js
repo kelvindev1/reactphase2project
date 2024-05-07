@@ -3,6 +3,7 @@ import "./App.css";
 import Hero from "./components/Hero";
 import Homecard from "./components/Homecard";
 import Navbar from "./components/Navbar";
+import Joblistings from "./components/Joblistings";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <Hero />
         <Homecard />
+        <Joblistings />
         <Routes>
           <Route></Route>
         </Routes>
