@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Joblisting from "./Joblisting";
 
 function Joblistings() {
   const [jobs, setJobs] = useState([]);
@@ -14,17 +15,7 @@ function Joblistings() {
     <div className="jobs-container">
       <ul className="jobs-items">
         {jobs.map((job) => (
-          <li key={job.id} className="joblist-item">
-            <div className="card">
-              <div className="card-body">
-                <p>{job.type}</p>
-                <h5 className="card-title">{job.title}</h5>
-                <p>{job.description}</p>
-                <p>{job.salary} /Year</p>
-                <p>{job.location}</p>
-              </div>
-            </div>
-          </li>
+          <Joblisting key={job.id} job={job} />
         ))}
       </ul>
     </div>
