@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Joblisting from "./Joblisting";
+import Joblisting from "./Joblisting.js";
+
+// import { Link } from "react-router-dom";
 
 function Joblistings() {
   const [jobs, setJobs] = useState([]);
@@ -19,6 +21,7 @@ function Joblistings() {
           <Joblisting key={job.id} job={job} />
         ))}
       </ul>
+      
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaMapMarker } from "react-icons/fa";
+import "./JobListings.css";
 
 function Joblisting({ job }) {
   const [showfullDescription, setshowfullDescription] = useState(false);
@@ -29,6 +30,7 @@ function Joblisting({ job }) {
               <FaMapMarker className="inline text-lg mb-1 mr-1" />{" "}
               {job.location}{" "}
             </p>
+            
           </div>
         </div>
       </li>

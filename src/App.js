@@ -3,7 +3,7 @@ import "./App.css";
 import Hero from "./components/Hero";
 import Homecard from "./components/Homecard";
 import Navbar from "./components/Navbar";
-import Joblistings from "./components/Joblistings";
+import JobListings from "./components/Joblistings";
 import ViewAllJobs from "./components/ViewAllJobs";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Hero />
         <Homecard />
-        <Joblistings />
+        <JobListings />
         <Routes>
           <Route path="/jobs" element={<ViewAllJobs />} />
         </Routes>
