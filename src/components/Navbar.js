@@ -5,9 +5,9 @@ function Navbar() {
   return (
     <div>
       <div className="navbar">
-        <NavLink> Artists </NavLink>
-        <NavLink> Genres </NavLink>
-        <NavLink> </NavLink>
+        <NavLink> Home </NavLink>
+        <NavLink> Jobs </NavLink>
+        <NavLink> Add Jobs </NavLink>
       </div>
     </div>
   );
