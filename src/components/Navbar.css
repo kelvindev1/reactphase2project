@@ -1,4 +1,21 @@
-.maindiv {
+.navbar {
+    padding: 8px;
+    margin: 1px;
     font-family: sans-serif;
+    border: solid 1px black;
     font-size: 20px;
+    color: azure;
+    background-color: blueviolet;
+    text-shadow: 3px 3px 3px #1e1c1c;
+    
+   
+   
+    
+  
+}
+.navbar:hover{
+    background-color: rgb(243, 91, 230);
+    color: rgb(225, 18, 18);
+    text-shadow: 3px 3px 3px #1e1c1c;
+    border: solid 1px rgb(255, 255, 255);
 }
