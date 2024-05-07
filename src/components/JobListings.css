@@ -13,6 +13,7 @@
     
     display: flex;
     flex-direction: row;
+    height:fit-content;
    
    
 }
@@ -22,6 +23,7 @@
     align-items: center;
     margin: 50px;
     justify-items: center;
+   
    
 }
 
