@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "./Card";
-import './HomeCard.css';
 function Homecard() {
   return (
     <div>
@@ -32,7 +31,7 @@ function Homecard() {
             </a>
           </div>
         </div>
-      </Card><hr/>
+      </Card>
     </div>
   );
 }
