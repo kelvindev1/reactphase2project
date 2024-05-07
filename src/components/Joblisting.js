@@ -17,6 +17,7 @@ function Joblisting({ job }) {
             <h5 className="card-title">{job.title}</h5>
             <p>{description}</p>
             <button
+              className="btn btn-primary"
               onClick={() => setshowfullDescription((prevState) => !prevState)}
             >
               {showfullDescription ? "less" : "more"}
