@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Homecard from "./components/Homecard";
 import Navbar from "./components/Navbar";
 import Joblistings from "./components/Joblistings";
+import ViewAllJobs from "./components/ViewAllJobs";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Homecard />
         <Joblistings />
         <Routes>
-          <Route></Route>
+          <Route path="/jobs" element={<ViewAllJobs />} />
         </Routes>
       </Router>
     </>
