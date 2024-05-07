@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 function ViewAllJobs() {
   return (
     <div>
-      <Link to="/jobs">View All Jobs</Link>
+      <button>
+        <Link to="/jobs"> View All Jobs </Link>
+      </button>
     </div>
   );
 }
