@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaMapMarker } from "react-icons/fa";
 
 function Joblisting({ job }) {
   const [showfullDescription, setshowfullDescription] = useState(false);
@@ -22,8 +23,12 @@ function Joblisting({ job }) {
             >
               {showfullDescription ? "less" : "more"}
             </button>
-            <p>{job.salary} /Year</p>
-            <p>{job.location}</p>
+            <p>{job.salary} / Year</p>
+            <p>
+              {" "}
+              <FaMapMarker className="inline text-lg mb-1 mr-1" />{" "}
+              {job.location}{" "}
+            </p>
           </div>
         </div>
       </li>
