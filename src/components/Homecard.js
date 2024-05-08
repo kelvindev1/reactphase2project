@@ -27,9 +27,9 @@ function Homecard() {
             <p className="card-text">
               List your job to find the perfect developer for the role
             </p>
-            <a href="#" className="btn btn-primary">
+            <Link to="/addjob" className="btn btn-primary">
               Add Job
-            </a>
+            </Link>
           </div>
         </div>
       </Card>
