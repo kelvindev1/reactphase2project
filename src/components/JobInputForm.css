@@ -7,36 +7,3 @@ form {
     padding: 20px;
     border: 1px solid blue;
     border-radius: 5px;
-}
-
-label {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-input,
-textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-textarea {
-    resize: vertical;
-}
-
-button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-h5 {
-    margin-top: 20px;
-}

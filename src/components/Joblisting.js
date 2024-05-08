@@ -10,28 +10,32 @@ function Joblisting({ job }) {
     description = description.substring(0, 90) + "...";
   }
   return (
-    <div>
-      <li key={job.id} className="joblist-item">
-        <div className="card">
-          <div className="card-body">
-            <p>{job.type}</p>
-            <h5 className="card-title">{job.title}</h5>
-            <p>{description}</p>
-            <button
-              className="btn btn-primary"
-              onClick={() => setshowfullDescription((prevState) => !prevState)}
-            >
-              {showfullDescription ? "less" : "more"}
-            </button>
-            <p>{job.salary} / Year</p>
-            <p>
-              {" "}
-              <FaMapMarker className="inline text-lg mb-1 mr-1" />{" "}
-              {job.location}{" "}
-            </p>
-          </div>
-        </div>
-      </li>
+    <div className="col-md-3" style={{ margin: "1.5rem" }}>
+      <div className="card">
+        <ul className="list-group list-group-flush">
+          <li key={job.id} className="list-group-item">
+            <div className="card-body">
+              <p>{job.type}</p>
+              <h5 className="card-title">{job.title}</h5>
+              <p>{description}</p>
+              <button
+                className="btn btn-primary"
+                onClick={() =>
+                  setshowfullDescription((prevState) => !prevState)
+                }
+              >
+                {showfullDescription ? "less" : "more"}
+              </button>
+              <p>{job.salary} / Year</p>
+              <p>
+                {" "}
+                <FaMapMarker className="inline text-lg mb-1 mr-1" />{" "}
+                {job.location}{" "}
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

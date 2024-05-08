@@ -1,4 +1,5 @@
 import React from "react";
+import "./Homecard.css";
 import Card from "./Card";
 function Homecard() {
   return (
