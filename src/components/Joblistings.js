@@ -80,12 +80,14 @@ function Joblistings() {
         handleCompanyInputChange={handleCompanyInputChange}
         handleSubmit={handleSubmit}
       />
-      <ul className="jobs-items">
+      <div className="container-fluid">
         {/* recentJobs */}
-        {jobs.map((job) => (
-          <Joblisting key={job.id} job={job} />
-        ))}
-      </ul>
+        <div className="row">
+          {jobs.map((job) => (
+            <Joblisting key={job.id} job={job} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
