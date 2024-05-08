@@ -1,6 +1,6 @@
 import React from "react";
-import "./Homecard.css";
 import Card from "./Card";
+import "./HomeCard.css";
 function Homecard() {
   return (
     <div>
