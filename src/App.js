@@ -9,6 +9,7 @@ import Hero from "./components/Hero";
 import Homecard from "./components/Homecard";
 import Joblistings from "./components/Joblistings";
 import ViewAllJobs from "./components/ViewAllJobs";
+import Browsejobs from "./components/Browsejobs";
 function App() {
   return (
     <>
@@ -17,7 +18,8 @@ function App() {
         <Homecard />
         <Joblistings />
         <Routes>
-          <Route path="/jobs" element={<ViewAllJobs />}></Route>
+          <Route path="/jobs" element={<ViewAllJobs />} />
+          <Route path="/kazi" element={<Browsejobs />} />
         </Routes>
       </Router>
     </>
