@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaMapMarker } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Job({ kazi }) {
   const [showFullDescription, setShowFullDescription] = useState(false);
@@ -34,6 +35,9 @@ function Job({ kazi }) {
                 {kazi.location}{" "}
               </p>
             </div>
+            <Link to={`/details/${kazi.id}`} className="btn btn-primary">
+              Readmore
+            </Link>
           </li>
         </ul>
       </div>

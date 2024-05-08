@@ -87,8 +87,7 @@ function Joblistings() {
             <Joblisting key={job.id} job={job} />
           ))}
         </div>
-      </div>
-      //{" "}
+      </div>{" "}
     </div>
   );
 }
