@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 function ReadmoreDetails() {
   const [jobs, setJobs] = useState([]);
 
+  const { id } = useParams();
+
   useEffect(() => {
-    // Fetch data from db.json using fetch API
-    fetch("http://localhost:3000/jobs")
+    fetch(`http://localhost:3000/jobs${id}`)
       .then((response) => response.json())
       .then((data) => {
         setJobs(data);
@@ -13,7 +15,7 @@ function ReadmoreDetails() {
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
-  }, []);
+  }, [id]);
 
   return (
     <div>

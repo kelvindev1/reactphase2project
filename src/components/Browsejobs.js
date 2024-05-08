@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaMapMarker } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function Job({ kazi }) {
+function Job({ kazi, onDelete }) {
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   let description = kazi.description;
@@ -11,8 +11,12 @@ function Job({ kazi }) {
     description = description.substring(0, 90) + "...";
   }
 
+  const handleDelete = () => {
+    onDelete(kazi.id);
+  };
+
   return (
-    <div className="col-md-3" style={{ margin: "1.5rem" }}>
+    <div className="col-md-3" style={{ margin: "3rem" }}>
       <div className="card">
         <ul className="list-group list-group-flush">
           <li key={kazi.id} className="list-group-item">
@@ -35,9 +39,27 @@ function Job({ kazi }) {
                 {kazi.location}{" "}
               </p>
             </div>
-            <Link to={`/details/${kazi.id}`} className="btn btn-primary">
+
+            <Link
+              to={`/details/${kazi.id}`}
+              className="btn btn-primary"
+              style={{ padding: "4px" }}
+            >
               Readmore
             </Link>
+
+            <button
+              className="button"
+              style={{
+                margin: "1rem",
+                padding: "4px",
+                background: "green",
+                color: "white",
+              }}
+              onClick={handleDelete}
+            >
+              Delete
+            </button>
           </li>
         </ul>
       </div>
@@ -56,10 +78,18 @@ function Browsejobs() {
       });
   }, []);
 
+  const deleteJob = (id) => {
+    fetch(`http://localhost:3000/jobs/${id}`, {
+      method: "DELETE",
+    }).then(() => {
+      setJobs((prevJobs) => prevJobs.filter((job) => job.id !== id));
+    });
+  };
+
   return (
     <div>
       {jobs.map((kazi) => (
-        <Job key={kazi.id} kazi={kazi} />
+        <Job key={kazi.id} kazi={kazi} onDelete={deleteJob} />
       ))}
     </div>
   );
