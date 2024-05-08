@@ -4,7 +4,7 @@ import JobInputForm from "./JobInputForm";
 
 function Joblistings() {
   const [jobs, setJobs] = useState([]);
-  // const recentJobs = jobs.slice(0, 3);
+  const recentJobs = jobs.slice(0, 3);
   useEffect(() => {
     fetch("http://localhost:3000/jobs")
       .then((res) => res.json())
@@ -83,7 +83,7 @@ function Joblistings() {
       <div className="container-fluid">
         {/* recentJobs */}
         <div className="row">
-          {jobs.map((job) => (
+          {recentJobs.map((job) => (
             <Joblisting key={job.id} job={job} />
           ))}
         </div>

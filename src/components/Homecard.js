@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 function Homecard() {
   return (
     <div>
@@ -11,9 +12,9 @@ function Homecard() {
             <p className="card-text">
               Browse our React jobs and start your career today
             </p>
-            <a href="#" className="btn btn-primary">
+            <Link to="/kazi" className="btn btn-primary">
               Browse jobs
-            </a>
+            </Link>
           </div>
         </div>
       </Card>
