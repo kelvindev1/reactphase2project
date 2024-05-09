@@ -11,8 +11,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Homelayout />} />
           <Route path="/kazi" element={<Browsejobs />} />
+        
           <Route path="/addjob" element={<Addjob />} />
-          <Route path="/details/:id" element={<ReadmoreDetails />} />
+          <Route path="/selectedCard/:id" element={<ReadmoreDetails />} />
         </Routes>
       </Router>
     </>
