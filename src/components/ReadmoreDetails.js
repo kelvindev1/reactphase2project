@@ -6,6 +6,8 @@ function ReadmoreDetails() {
 
   const { id } = useParams();
 
+  
+
   useEffect(() => {
     fetch(`http://localhost:3000/jobs/${id}`)
       .then((response) => {
@@ -22,7 +24,9 @@ function ReadmoreDetails() {
         console.error("Error fetching data:", error);
       });
   }, [id]);
-
+  const handleGoBack = () => {
+    window.history.back(); // Go back to the previous page
+  };
   return (
     <div>
       {Array.isArray(jobs) &&
@@ -36,6 +40,7 @@ function ReadmoreDetails() {
             <p>Company: {job.company.name}</p>
             <p>Contact Email: {job.company.contactEmail}</p>
             <p>Contact Phone: {job.company.contactPhone}</p>
+            <button className="btn btn-secondary"onClick={handleGoBack}>Go Back</button>
           </div>
         ))}
       {!Array.isArray(jobs) && <div>No jobs found</div>}

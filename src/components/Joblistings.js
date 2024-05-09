@@ -11,6 +11,7 @@ function Joblistings() {
         setJobs(data);
       });
   }, []);
+  
 
   return (
     <div className="jobs-container">

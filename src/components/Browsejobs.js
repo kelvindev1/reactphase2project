@@ -91,6 +91,10 @@ function Browsejobs() {
       setJobs((prevJobs) => prevJobs.filter((job) => job.id !== id));
     });
   };
+  const handleGoBack = () =>{
+    window.history.back(); //go back to previous page
+  }
+
 
   return (
     <div className="jobs-container">
@@ -99,9 +103,12 @@ function Browsejobs() {
           <h4 style={{ textAlign: "center", fontStyle: "italic" }}>
             Browse All jobs
           </h4>
+          <button  className="btn btn-secondary" onClick={handleGoBack}>Go Back</button>
           {jobs.map((kazi) => (
             <Job key={kazi.id} kazi={kazi} onDelete={deleteJob} />
+           
           ))}
+         
         </div>
       </div>{" "}
     </div>

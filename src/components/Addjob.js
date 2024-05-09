@@ -75,8 +75,8 @@ function Addjob() {
   };
 
   return (
-    <div>
-      <h5 style={{ marginLeft: "4rem" }}>Fill in this form to create a job</h5>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+  <h5>Fill in this form to create a job</h5>
       <JobInputForm
         newJob={newJob}
         handleInputChange={handleInputChange}
