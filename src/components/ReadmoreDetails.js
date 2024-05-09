@@ -6,6 +6,8 @@ function ReadmoreDetails() {
 
   const { id } = useParams();
 
+  // param is used to get parametrs 
+
   useEffect(() => {
     fetch(`http://localhost:3000/jobs/${id}`)
       .then((response) => {

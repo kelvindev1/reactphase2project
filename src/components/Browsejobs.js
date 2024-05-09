@@ -8,7 +8,7 @@ function Job({ kazi, onDelete }) {
   let description = kazi.description;
 
   if (!showFullDescription) {
-    description = description.substring(0, 90) + "...";
+    description = description.substring(0, 80) + "...";
   }
 
   const handleDelete = () => {
