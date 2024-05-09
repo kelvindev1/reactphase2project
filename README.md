@@ -39,10 +39,10 @@ API’s.
 
 ## CONTACT INFORMATION
 You can reach out to us through:
-- [Github](https://github.com/ernestmusau)
-  [Github](https://github.com/kelvindev1)
-  [Github](https://github.com/AHMEDHANSHI)
-  [Github](https://github.com/kamusarihanshi)
+- [Ernest musau](https://github.com/ernestmusau)
+  [Kelvin Mutugi](https://github.com/kelvindev1)
+  [Ahmed Mohamed](https://github.com/AHMEDHANSHI)
+  [Eliud Koome](https://github.com/kamusarihanshi)
 
 
 ## LICENSE
