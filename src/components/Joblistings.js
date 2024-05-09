@@ -20,7 +20,8 @@ function Joblistings() {
             style={{
               textAlign: "center",
               fontStyle: "italic",
-              textDecoration: "underline",
+              textShadow:'1px 1px 1px black ',
+              textDecoration: 'underline',
               color: "blue",
             }}
           >
