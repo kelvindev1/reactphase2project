@@ -82,6 +82,34 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "7",
+      "title": "Front-End Engineer (React & Vite)",
+      "type": "Part-Time",
+      "location": "Kakamega, Kenya",
+      "description": "Join our team as a Front-End Developer in Pine Breeze Kakamega, Kenya. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
+      "salary": "$70K - $80K",
+      "company": {
+        "name": "Fonseca Solutions",
+        "description": "Fonseca Solutions is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
+        "contactEmail": "contact@ipsumipsum.com",
+        "contactPhone": "678-555-5765"
+      }
+    },
+    {
+      "id": "7",
+      "title": "React Native Developer",
+      "type": "Part-Time",
+      "location": "Vihiga, Kenya",
+      "description": "Join our team as a React Native Developer in Porto Vihiga, Kenya. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
+      "salary": "$90K - $110K",
+      "company": {
+        "name": "Parito Solutions",
+        "description": "Parito Solutions is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
+        "contactEmail": "contact@ipsumipsum.com",
+        "contactPhone": "987-678-5777"
+      }
     }
   ]
 }

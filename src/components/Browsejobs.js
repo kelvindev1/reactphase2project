@@ -96,7 +96,7 @@ function Browsejobs() {
     <div className="jobs-container">
       <div className="container-fluid">
         <div className="row">
-          <h4 style={{ textAlign: "center", fontStyle: "italic" }}>
+          <h4 style={{ textAlign: "center", fontStyle: "italic", backgroundColor: "indigo" }}>
             Browse All jobs
           </h4>
           {jobs.map((kazi) => (
