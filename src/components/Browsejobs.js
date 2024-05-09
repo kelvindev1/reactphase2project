@@ -16,7 +16,6 @@ function Job({ kazi, onDelete }) {
       onDelete(kazi.id);
     }
   };
-  
 
   return (
     <div className="col-md-3" style={{ margin: "3rem" }}>
@@ -92,18 +91,30 @@ function Browsejobs() {
       setJobs((prevJobs) => prevJobs.filter((job) => job.id !== id));
     });
   };
-  const handleGoBack = () =>{
-    window.history.back(); //go back to previous page
-  }
+  const handleGoBack = () => {
+    window.history.back();
+  };
 
   return (
     <div className="jobs-container">
       <div className="container-fluid">
         <div className="row">
-          <h4 style={{ textAlign: "center", fontStyle: "italic", backgroundColor: "indigo" }}>
+          <button
+            className="btn btn-primary"
+            style={{
+              width: "5%",
+              height: "auto",
+              margin: "6px",
+              display: "block",
+              textAlign: "center",
+            }}
+            onClick={handleGoBack}
+          >
+            Go Back
+          </button>
+          <h4 style={{ textAlign: "center", fontStyle: "italic" }}>
             Browse All jobs
           </h4>
-          <button  className="btn btn-secondary" onClick={handleGoBack}>Go Back</button>
           {jobs.map((kazi) => (
             <Job key={kazi.id} kazi={kazi} onDelete={deleteJob} />
           ))}

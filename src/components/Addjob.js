@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import JobInputForm from "./JobInputForm";
 
-
 function Addjob() {
   const [jobs, setJobs] = useState([]);
   useEffect(() => {
@@ -77,7 +76,6 @@ function Addjob() {
 
   return (
     <div>
-      <h5 style={{ marginLeft: "4rem" }}>Fill in this form to create a job</h5>
       <JobInputForm
         newJob={newJob}
         handleInputChange={handleInputChange}

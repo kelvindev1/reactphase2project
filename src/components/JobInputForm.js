@@ -1,10 +1,9 @@
 import React from "react";
 import "./JobInputForm.css";
 
-
 const handleGoBack = () => {
   window.history.back(); //go back to previous page
-}
+};
 function JobInputForm({
   newJob,
   handleInputChange,
@@ -13,12 +12,15 @@ function JobInputForm({
 }) {
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "block", margin:"6px"}}>
         <button className="btn btn-secondary" onClick={handleGoBack}>
           Go Back
         </button>
+        <h5 style={{ marginLeft: "4rem" }}>
+          Fill in this form to create a job
+        </h5>
       </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ justifyContent: "center" }}>
         <form onSubmit={handleSubmit}>
           <label>
             <input
@@ -133,9 +135,9 @@ function JobInputForm({
             Post Job
           </button>
         </form>
-        </div>
-      </>
-      );
+      </div>
+    </>
+  );
 }
 
-      export default JobInputForm;
+export default JobInputForm;
