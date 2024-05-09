@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import JobInputForm from "./JobInputForm";
+import Navbar from "./Navbar";
+
+<Navbar/>
 
 function Addjob() {
   const [jobs, setJobs] = useState([]);

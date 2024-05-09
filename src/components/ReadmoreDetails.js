@@ -29,7 +29,7 @@ function ReadmoreDetails() {
     <div>
       {Array.isArray(jobs) &&
         jobs.map((job) => (
-          <div key={job.id} className="job-details" style={{border:"solid", margin:'20px', padding:'10px', backgroundColor:'purple ', borderRadius:'5px'}}>
+          <div key={job.id} className="job-details" style={{border:"solid", margin:'20px', padding:'10px', backgroundColor:'pink' , borderRadius:'5px'}}>
             <h2>{job.title}</h2>
             <p>{job.description}</p>
             <p>Type: {job.type}</p>
