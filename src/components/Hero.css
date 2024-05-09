@@ -4,3 +4,19 @@
     border-top: blur;
     color: white;
 }
+/* Hero.css */
+
+  /* Hero.css */
+h1 {
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position: no vertical translation */
+    }
+    50% {
+      transform: translateY(-20px); /* Bounce upward */
+    }
+  }
+  
