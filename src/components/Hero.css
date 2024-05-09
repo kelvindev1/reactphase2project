@@ -1,5 +1,6 @@
 .text-center {
     padding: 50px;
-    background-color: blueviolet;
+    background-color: rgb(177, 119, 231);
     border-top: blur;
+    color: white;
 }
