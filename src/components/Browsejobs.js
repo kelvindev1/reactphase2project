@@ -20,7 +20,7 @@ function Job({ kazi, onDelete }) {
       <div className="card">
         <ul className="list-group list-group-flush">
           <li key={kazi.id} className="list-group-item">
-            <div className="card-body" style={{ background: "beige" }}>
+            <div className="card-body">
               <p>{kazi.type}</p>
               <h5 className="card-title">{kazi.title}</h5>
               <p>{description}</p>
@@ -87,10 +87,17 @@ function Browsejobs() {
   };
 
   return (
-    <div>
-      {jobs.map((kazi) => (
-        <Job key={kazi.id} kazi={kazi} onDelete={deleteJob} />
-      ))}
+    <div className="jobs-container">
+      <div className="container-fluid">
+        <div className="row">
+          <h4 style={{ textAlign: "center", fontStyle: "italic" }}>
+            Browse All jobs
+          </h4>
+          {jobs.map((kazi) => (
+            <Job key={kazi.id} kazi={kazi} onDelete={deleteJob} />
+          ))}
+        </div>
+      </div>{" "}
     </div>
   );
 }
