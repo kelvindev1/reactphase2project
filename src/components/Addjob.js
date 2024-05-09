@@ -76,9 +76,9 @@ function Addjob() {
 
   return (
     <div>
-      <h5 style={{ marginLeft: "4rem", fontFamily:'monospace', fontSize:'1.2rem' }}>Fill in this form to create a job</h5>
+      <h5 style={{ marginLeft: "4rem" }}>Fill in this form to create a job</h5>
       <JobInputForm
-        newJob={newJob }
+        newJob={newJob}
         handleInputChange={handleInputChange}
         handleCompanyInputChange={handleCompanyInputChange}
         handleSubmit={handleSubmit}

@@ -14,7 +14,7 @@ function Joblisting({ job }) {
       <div className="card">
         <ul className="list-group list-group-flush">
           <li key={job.id} className="list-group-item">
-            <div className="card-body" style={{background:"beige"}}>
+            <div className="card-body" style={{ background: "beige" }}>
               <p>{job.type}</p>
               <h5 className="card-title">{job.title}</h5>
               <p>{description}</p>

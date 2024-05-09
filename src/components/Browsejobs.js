@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { FaMapMarker } from "react-icons/fa";
-import { useNavigate,  } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Job({ kazi, onDelete }) {
   const [showFullDescription, setShowFullDescription] = useState(false);
-
 
   let description = kazi.description;
 
@@ -17,7 +16,6 @@ function Job({ kazi, onDelete }) {
       onDelete(kazi.id);
     }
   };
-  const navigate= useNavigate()
 
   return (
     <div className="col-md-3" style={{ margin: "3rem" }}>
@@ -44,16 +42,13 @@ function Job({ kazi, onDelete }) {
               </p>
             </div>
 
-            <button onClick={()=>{
-              navigate('/selectedCard/')
-            }}className="btn btn-primary"
-            style={{ padding: "4px" }}
-          >
-              
-              
-            
+            <Link
+              to={`/details/${kazi.id}`}
+              className="btn btn-primary"
+              style={{ padding: "4px" }}
+            >
               Readmore
-              </button>
+            </Link>
 
             <button
               className="button"
