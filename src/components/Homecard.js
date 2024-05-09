@@ -3,9 +3,9 @@ import Card from "./Card";
 import { Link } from "react-router-dom";
 function Homecard() {
   return (
-    <div>
+    <div className="container" style={{ margin:'0'}}>
       <Card>
-        <div className="card" style={{ margin: "2rem" }}>
+        <div className="card" style={{ margin: "2rem", backgroundColor:'beige',width:'700px' }}>
           <div className="card-body">
             {" "}
             <h5 className="card-title">For Developers</h5>
@@ -21,7 +21,7 @@ function Homecard() {
 
       <Card>
         {" "}
-        <div className="card" style={{ margin: "2rem" }}>
+        <div className="card" style={{ margin: "2rem",backgroundColor:'beige',width:'700px' }}>
           <div className="card-body">
             <h5 className="card-title">For Employers</h5>
             <p className="card-text">

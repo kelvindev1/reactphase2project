@@ -1,6 +1,6 @@
 .text-center {
     padding: 50px;
-    background-color: rgb(177, 119, 231);
+    background-color: hsl(271, 70%, 69%);
     border-top: blur;
     color: white;
 }
