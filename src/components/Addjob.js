@@ -54,21 +54,24 @@ function Addjob() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    addJob(newJob);
-    setNewJob({
-      id: "",
-      title: "",
-      type: "",
-      description: "",
-      location: "",
-      salary: "",
-      company: {
-        name: "",
+    if (window.confirm("Are you sure you want post this job ?")) {
+      addJob(newJob);
+      setNewJob({
+        id: "",
+        title: "",
+        type: "",
         description: "",
-        contactEmail: "",
-        contactPhone: "",
-      },
-    });
+        location: "",
+        salary: "",
+        company: {
+          name: "",
+          description: "",
+          contactEmail: "",
+          contactPhone: "",
+        },
+      });
+      alert("Job Posted successfully !");
+    }
   };
 
   return (
