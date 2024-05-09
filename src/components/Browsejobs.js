@@ -12,7 +12,9 @@ function Job({ kazi, onDelete }) {
   }
 
   const handleDelete = () => {
-    onDelete(kazi.id);
+    if (window.confirm("Are you sure you want to delete this job?")) {
+      onDelete(kazi.id);
+    }
   };
 
   return (
@@ -55,6 +57,10 @@ function Job({ kazi, onDelete }) {
                 padding: "4px",
                 background: "green",
                 color: "white",
+                transition: "background-color 0.3s",
+                ":hover": {
+                  background: "red",
+                },
               }}
               onClick={handleDelete}
             >
