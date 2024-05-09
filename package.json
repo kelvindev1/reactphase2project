@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "cors": "^2.8.5",
+    "json-server": "^1.0.0-alpha.23",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
@@ -36,5 +38,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "description": "## AUTHORS 1. [Ernest Musau](https://github.com/ernestmusau) 1. [Kelvin Mutugi](https://github.com/kelvindev1) 1. [Ahmed Mohamed](https://github.com/AHMEDHANSHI) 1. [Eliud Koome](https://github.com/kamusarihanshi) ## DESCRIPTION ### Job Listing This jobs helps job-finders, developers to be precise, find jobs. It also gives employers a platform to post advertise their available jobs'",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
