@@ -7,10 +7,10 @@ function Joblisting({ job }) {
   let description = job.description;
 
   if (!showfullDescription) {
-    description = description.substring(0, 90) + "...";
+    description = description.substring(0, 80) + "...";
   }
   return (
-    <div className="col-md-3" style={{ margin: "1.5rem" }}>
+    <div className="col-md-3" style={{ margin: "1.55rem" }}>
       <div className="card">
         <ul className="list-group list-group-flush">
           <li key={job.id} className="list-group-item">
