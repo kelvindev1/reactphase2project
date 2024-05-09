@@ -3,7 +3,7 @@ import Joblisting from "./Joblisting";
 
 function Joblistings() {
   const [jobs, setJobs] = useState([]);
-  const recentJobs = jobs.slice(0, 3);
+  const recentJobs = jobs.slice(0, 4);
   useEffect(() => {
     fetch("http://localhost:3000/jobs")
       .then((res) => res.json())
