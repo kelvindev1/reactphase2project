@@ -8,7 +8,7 @@ function ReadmoreDetails() {
  
  
 
-  
+  console.log(selectedCard)
 
   useEffect(() => {
     fetch(`http://localhost:3000/jobs${id}`)
@@ -19,11 +19,15 @@ function ReadmoreDetails() {
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
-  }, []);
+  }, [id]);
 
   return (
     <div>
-      {jobs.map((selectedCard) => (
+          {jobs
+          .filter((selectedCard)=>selectedCard.id === id)
+          .map((selectedCard)=>(
+
+      
         <div key={selectedCard.id} className="job-details">
           <h2>{selectedCard.title}</h2>
           <p>{selectedCard.description}</p>

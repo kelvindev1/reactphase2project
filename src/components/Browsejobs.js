@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaMapMarker } from "react-icons/fa";
-import { Link, Navigate, useNavigate,  } from "react-router-dom";
+import { useNavigate,  } from "react-router-dom";
 
 function Job({ kazi, onDelete }) {
   const [showFullDescription, setShowFullDescription] = useState(false);
@@ -45,7 +45,7 @@ function Job({ kazi, onDelete }) {
             </div>
 
             <button onClick={()=>{
-              navigate('/selectedCard')
+              navigate('/selectedCard/')
             }}className="btn btn-primary"
             style={{ padding: "4px" }}
           >
