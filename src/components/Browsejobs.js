@@ -20,7 +20,7 @@ function Job({ kazi, onDelete }) {
       <div className="card">
         <ul className="list-group list-group-flush">
           <li key={kazi.id} className="list-group-item">
-            <div className="card-body">
+            <div className="card-body" style={{ background: "beige" }}>
               <p>{kazi.type}</p>
               <h5 className="card-title">{kazi.title}</h5>
               <p>{description}</p>

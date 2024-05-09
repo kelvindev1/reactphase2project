@@ -16,6 +16,16 @@ function Joblistings() {
     <div className="jobs-container">
       <div className="container-fluid">
         <div className="row">
+          <h4
+            style={{
+              textAlign: "center",
+              fontStyle: "italic",
+              textDecoration: "underline",
+              color: "blue",
+            }}
+          >
+            Recent Jobs
+          </h4>
           {recentJobs.map((job) => (
             <Joblisting key={job.id} job={job} />
           ))}
