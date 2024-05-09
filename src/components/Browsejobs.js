@@ -16,6 +16,7 @@ function Job({ kazi, onDelete }) {
       onDelete(kazi.id);
     }
   };
+  
 
   return (
     <div className="col-md-3" style={{ margin: "3rem" }}>
@@ -91,6 +92,9 @@ function Browsejobs() {
       setJobs((prevJobs) => prevJobs.filter((job) => job.id !== id));
     });
   };
+  const handleGoBack = () =>{
+    window.history.back(); //go back to previous page
+  }
 
   return (
     <div className="jobs-container">
@@ -99,6 +103,7 @@ function Browsejobs() {
           <h4 style={{ textAlign: "center", fontStyle: "italic", backgroundColor: "indigo" }}>
             Browse All jobs
           </h4>
+          <button  className="btn btn-secondary" onClick={handleGoBack}>Go Back</button>
           {jobs.map((kazi) => (
             <Job key={kazi.id} kazi={kazi} onDelete={deleteJob} />
           ))}
