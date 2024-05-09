@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 function ReadmoreDetails() {
   const [jobs, setJobs] = useState([]);
-  const [selectedJobId, setSelectedJobId] = useState(null);
 
   useEffect(() => {
     // Fetch data from db.json using fetch API
@@ -16,16 +15,20 @@ function ReadmoreDetails() {
       });
   }, []);
 
-  const handleJobClick = (jobId) => {
-    setSelectedJobId(jobId === selectedJobId ? null : jobId); // Toggle selected job
+  const toggleJobDetails = (jobId) => {
+    setJobs((prevJobs) =>
+      prevJobs.map((job) =>
+        job.id === jobId ? { ...job, showDetails: !job.showDetails } : job
+      )
+    );
   };
 
   return (
     <div>
       {jobs.map((job) => (
         <div key={job.id} className="job-details">
-          <h2 onClick={() => handleJobClick(job.id)}>{job.title}</h2>
-          {selectedJobId === job.id && (
+          <h2 onClick={() => toggleJobDetails(job.id)}>{job.title}</h2>
+          {job.showDetails && (
             <div>
               <p>{job.description}</p>
               <p>Type: {job.type}</p>
@@ -43,3 +46,4 @@ function ReadmoreDetails() {
 }
 
 export default ReadmoreDetails;
+
