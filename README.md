@@ -4,7 +4,7 @@
 1. [Ernest Musau](https://github.com/ernestmusau)
 1. [Kelvin Mutugi](https://github.com/kelvindev1)
 1. [Ahmed Mohamed](https://github.com/AHMEDHANSHI)
-1. [Eliud Koome](https://github.com/kamusarihanshi)
+1. [Eliud Koome](https://github.com/ELIUD305KOOME)
 ## DESCRIPTION
 ### Job Listing
 This jobs helps job-finders, developers to be precise, find jobs. It also gives employers a platform to post advertise their available jobs'
