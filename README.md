@@ -43,7 +43,7 @@ You can reach out to us through:
 1. [Ernest musau](https://github.com/ernestmusau)
 1. [Kelvin Mutugi](https://github.com/kelvindev1)
 1. [Ahmed Mohamed](https://github.com/AHMEDHANSHI)
-1.   [Eliud Koome](https://github.com/kamusarihanshi)
+1.   [Eliud Koome](https://github.com/ELIUD305KOOME)
 
 
 ## LICENSE
